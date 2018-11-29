@@ -87,7 +87,8 @@ public class MainActivity extends AppCompatActivity {
 
         int randomNumber = generateRandomNumber(MIN_NUMBER, MAX_NUMBER);
 
-        numberTextView.setText( Integer.toString(randomNumber) );
+        numberTextView.setText( String.valueOf(randomNumber) );
+
         numberTextView.setId(buttonId);
         buttonId++;
         numberTextView.setOnClickListener(clickListener);
