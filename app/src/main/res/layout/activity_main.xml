@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        >
+        <LinearLayout
+            android:id="@+id/top_container"
+            android:orientation="horizontal"
+            android:layout_height="match_parent"
+
+            android:layout_width="match_parent"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:clipChildren="true">
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <RelativeLayout
+        android:id="@+id/bottom_container"
+        android:orientation="vertical"
+
+        android:padding="@dimen/bottom_container_padding"
+
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <Button
+            android:id="@+id/button_add"
+
+            android:layout_centerHorizontal="true"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_number" />
+
+        <Button
+            android:id="@+id/button_remove"
+
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/button_add"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/remove_numbers"/>
+    </RelativeLayout>
+
+</LinearLayout>

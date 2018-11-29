@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bottom_container_padding">20dp</dimen>
+
+    <dimen name="number_size">36sp</dimen>
+    <dimen name="number_margin">10dp</dimen>
+
+
+</resources>
